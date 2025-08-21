@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Kaamlify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="kaamlify.png">
+
+</head>
+<body>
+  <div class="bg-circles">
+    <div class="bg-circle"></div>
+    <div class="bg-circle2"></div>
+  </div>
+  <nav class="navbar">
+    <div class="logo">
+  <img src="logo3.png" alt="Logo" style="width:68px;height:68px;border-radius:50%;object-fit:cover;margin-right:5px;" />
+      <span style="font-size:1.35rem;font-weight:500;">Kaamlify</span>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <section class="main-section">
+    <h1 class="coming-title">Something Awesome is Coming!</h1>
+    <div class="coming-subtitle">Kaamlify pre-registration is now open!</div>
+    <div id="countdown-timer" class="countdown-timer">
+      <div class="countdown-box"><span class="countdown-num" id="cd-days">00</span><span class="countdown-label">Days</span></div>
+      <div class="countdown-box"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-label">Hours</span></div>
+      <div class="countdown-box"><span class="countdown-num" id="cd-minutes">00</span><span class="countdown-label">Minutes</span></div>
+      <div class="countdown-box"><span class="countdown-num" id="cd-seconds">00</span><span class="countdown-label">Seconds</span></div>
+    </div>
+    <button class="cta-btn" id="getStartedBtn">Get Started Now</button>
+  </section>
+
+  <!-- Register Dialog -->
+  <div id="registerDialog" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(17,24,39,0.85);z-index:100;align-items:center;justify-content:center;">
+    <div class="register-dialog-box">
+      <button id="closeDialogBtn" class="register-close-btn">&times;</button>
+      <h2 class="register-title">Register</h2>
+      <form id="register-form">
+        <input id="register-name" type="text" placeholder="Name" required class="register-input" name="name">
+        <input id="register-email" type="email" placeholder="Email" required class="register-input" name="email">
+        <button type="submit" class="register-submit-btn">Register</button>
+      </form>
+      <div id="loading-message" style="display:none;text-align:center;padding:18px 0;font-size:1.1rem;">Registering...</div>
+      <div id="thank-you-message" style="display:none;text-align:center;padding:30px 0 18px 0;">
+        <h2 style='margin-bottom:18px;font-size:1.3rem;'>Thank you for being a part of Kaamlify!</h2>
+        <div style='font-size:1.08rem;opacity:0.92;'>We will let you know when the platform launches.</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
